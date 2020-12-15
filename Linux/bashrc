@@ -1,0 +1,5 @@
+alias lsa='ls -a'
+alias documents='cd ~/Documents'
+alias downloads='cd ~/Downloads'
+alias etc='cd ~/etc'
+alias etc='cd ~/etc'
