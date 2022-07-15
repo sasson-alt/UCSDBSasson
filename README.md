@@ -23,15 +23,15 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting inbound access to the network.
 
--_Load balancers maintain the intregity of availability of a system's resources provided. The advantage of a jump box is that it is a gateway that must
+- Load balancers maintain the intregity of availability of a system's resources provided. The advantage of a jump box is that it is a gateway that must
 
 passed in order to gain access to the DVWA's and ELK stacks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VMs on the network and system metrics.
 
--_Filebeat watches and detects any changes to the filesystem.
+- Filebeat watches and detects any changes to the filesystem.
 
--_Metricbeat monitors changes in system metrics, such as SSH login attempts and CPU/RAM statistics.
+- Metricbeat monitors changes in system metrics, such as SSH login attempts and CPU/RAM statistics.
 
 The configuration details of each machine may be found below.
 
@@ -72,11 +72,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
--_.Installs docker.io, which is used to configure the ELK VM
+-_Installs docker.io, which is used to configure the ELK VM
 
--_.Installs python3 and a module for compatibility with docker.io, while increasing system memory allocated to the ansible-playbook
+-_Installs python3 and a module for compatibility with docker.io, while increasing system memory allocated to the ansible-playbook
 
--_.Once those prerequisities are met, downloads and lauches a docker elk container under specific ports.
+-_Once those prerequisities are met, downloads and lauches a docker elk container under specific ports.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
